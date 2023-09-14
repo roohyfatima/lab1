@@ -1,0 +1,60 @@
+import requests
+from bs4 import BeautifulSoup
+
+def main():
+    # Define the URL to scrape
+    url = "https://www.nyit.edu/"
+
+    # Send an HTTP GET request to the URL
+    response = requests.get(url)
+
+    # Check if the request was successful (status code 200)
+    if response.status_code == 200:
+        # Parse the HTML content of the page using BeautifulSoup
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Extract and print the title of the webpage
+        title = soup.title
+        print("Title of the webpage:", title.text)
+
+        # You can find and extract other elements similarly using BeautifulSoup
+        # For example, to extract all the links on the page:
+        links = soup.find_all('a')
+        for link in links:
+            print("Link:", link.get('href'))
+
+    else:
+        print("Failed to retrieve the webpage. Status code:", response.status_code)
+
+if __name__ == "__main__":
+    main()
+import requests
+from bs4 import BeautifulSoup
+
+def main():
+    # Define the URL to scrape
+    url = "https://www.nyit.edu/"
+
+    # Send an HTTP GET request to the URL
+    response = requests.get(url)
+
+    # Check if the request was successful (status code 200)
+    if response.status_code == 200:
+        # Parse the HTML content of the page using BeautifulSoup
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Print the URL of the webpage you are currently scraping
+        print("URL of the webpage:", url)
+
+        # You can find and extract other elements similarly using BeautifulSoup
+        # For example, to extract all the links on the page:
+        links = soup.find_all('a')
+        for link in links:
+            print("Link:", link.get('href'))
+
+    else:
+        print("Failed to retrieve the webpage. Status code:", response.status_code)
+
+if __name__ == "__main__":
+    main()
+
