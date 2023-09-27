@@ -1,0 +1,5 @@
+CTEC 243ETEC 110ETEC 131ETEC 231 
+INCS 775: Data Centre SecurityINCS 741: CryptographyINCS 870: Project I 
+Electrical CircuitsCircuit Design and FabricationControl Systems TechnologyDigital Signal ProcessingFiber Optics Technology 
+ENGY 610: Energy ManagementENGY 670: Energy Technology in PerspectiveENGY 695: Systems Engineering and ManagementENGY 775: Alternative Energy Systems 
+EENG 483: Introduction to VLSI DesignCSCI 660: Introduction to VLSI DesignEENG 635: Probability and Stochastic ProcessesEENG 491: Senior Design Project IIEENG 489: Senior Design Project I 
